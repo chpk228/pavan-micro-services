@@ -1,0 +1,111 @@
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #1a2a3a, #0d161f);
+    color: white;
+}
+
+/* HEADER */
+header {
+    background: rgba(44, 62, 80, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 1.5em;
+    text-align: center;
+    border-bottom: 2px solid #3498db;
+}
+
+/* NAVBAR */
+nav {
+    background-color: #111b27;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #ffcc00;
+    padding: 14px 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #3498db;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* NEWS BAR */
+#newsBar {
+    background: #0d161f;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* SECTION */
+section {
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s, opacity 0.5s;
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+/* HEADINGS */
+h2 {
+    color: #3498db;
+}
+
+/* BUTTON (optional use) */
+.btn {
+    background: #3498db;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #2980b9;
+}
+
+/* CLOCK */
+#istClock {
+    text-align: center;
+    margin: 15px;
+    color: #ffcc00;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0d161f;
+}
+</style>
